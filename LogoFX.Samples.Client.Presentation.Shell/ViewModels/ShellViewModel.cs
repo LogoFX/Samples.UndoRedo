@@ -5,7 +5,10 @@ using LogoFX.Client.Mvvm.ViewModel.Services;
 
 namespace LogoFX.Samples.Client.Presentation.Shell.ViewModels
 {
-    [UsedImplicitly]
+    /// <summary>
+    /// Root object of the application.
+    /// </summary>
+    [UsedImplicitly]    
     class ShellViewModel : Conductor<INotifyPropertyChanged>.Collection.OneActive
     {
         private readonly IViewModelCreatorService _viewModelCreatorService;
