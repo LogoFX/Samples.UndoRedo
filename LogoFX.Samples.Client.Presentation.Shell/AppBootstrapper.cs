@@ -13,7 +13,7 @@ namespace LogoFX.Samples.Client.Presentation.Shell
     /// The bootstrapper will work with any IoC container adapter, making replacing 
     /// the IoC container easier.
     /// </summary>
-    class AppBootstrapper : BootstrapperContainerBase<ShellViewModel, SimpleInjectorContainer>
+    class AppBootstrapper : BootstrapperContainerBase<ShellViewModel, SimpleInjectorAdapter>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="AppBootstrapper"/> class.
@@ -22,12 +22,12 @@ namespace LogoFX.Samples.Client.Presentation.Shell
         /// parameter as well
         /// </summary>
         public AppBootstrapper()
-            :base(new SimpleInjectorContainer())
+            :base(new SimpleInjectorAdapter())
         {
             
         }
 
-        protected override void OnConfigure(SimpleInjectorContainer container)
+        protected override void OnConfigure(SimpleInjectorAdapter container)
         {
             base.OnConfigure(container);
             container.RegisterSingleton<IViewModelFactory, ViewModelFactory>();
