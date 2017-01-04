@@ -1,7 +1,5 @@
 ﻿using LogoFX.Client.Bootstrapping;
-using LogoFX.Client.Bootstrapping.Adapters.SimpleInjector;
-using LogoFX.Client.Mvvm.ViewModel.Contracts;
-using LogoFX.Client.Mvvm.ViewModelFactory.SimpleInjector;
+using LogoFX.Client.Bootstrapping.Adapters.SimpleContainer;
 using LogoFX.Samples.Client.Presentation.Shell.ViewModels;
 
 namespace LogoFX.Samples.Client.Presentation.Shell
@@ -12,7 +10,7 @@ namespace LogoFX.Samples.Client.Presentation.Shell
     /// The bootstrapper will work with any IoC container adapter, making replacing 
     /// the IoC container easier.
     /// </summary>
-    class AppBootstrapper : BootstrapperContainerBase<SimpleInjectorAdapter>.WithRootObject<ShellViewModel>
+    class AppBootstrapper : BootstrapperContainerBase<ExtendedSimpleContainerAdapter>.WithRootObject<ShellViewModel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="AppBootstrapper"/> class.
@@ -20,7 +18,7 @@ namespace LogoFX.Samples.Client.Presentation.Shell
         /// and support possible integration tests where the container is passed as a 
         /// parameter as well
         /// </summary>
-        public AppBootstrapper(SimpleInjectorAdapter containerAdapter)
+        public AppBootstrapper(ExtendedSimpleContainerAdapter containerAdapter)
             : base(containerAdapter)
         {
 
