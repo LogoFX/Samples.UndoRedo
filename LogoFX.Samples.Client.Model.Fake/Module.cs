@@ -4,9 +4,9 @@ using Solid.Practices.Modularity;
 
 namespace LogoFX.Samples.Client.Model.Fake
 {    
-    class Module : ICompositionModule<IIocContainerRegistrator>
+    class Module : ICompositionModule<IDependencyRegistrator>
     {
-        public void RegisterModule(IIocContainerRegistrator iocContainer)
+        public void RegisterModule(IDependencyRegistrator iocContainer)
         {
             iocContainer.RegisterSingleton<IDataService, DataService>();
         }
