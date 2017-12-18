@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{719AD31A-1447-494B-93D5-897FCA9E0CCF}"
 EndProject
@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{1EAEA804
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoFX.Samples.Client.Presentation.Shell", "LogoFX.Samples.Client.Presentation.Shell\LogoFX.Samples.Client.Presentation.Shell.csproj", "{58C498E4-56D6-4797-832A-99346C4D960F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoFX.Samples.Client.Model.Contracts", "LogoFX.Samples.Client.Model.Contracts\LogoFX.Samples.Client.Model.Contracts.csproj", "{4AEDC0F4-C048-4277-8D37-E51CCB6620BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogoFX.Samples.Client.Model.Contracts", "LogoFX.Samples.Client.Model.Contracts\LogoFX.Samples.Client.Model.Contracts.csproj", "{6F6F6C0C-0CA9-417F-B7B0-589FCAFB209B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoFX.Samples.Client.Model.Fake", "LogoFX.Samples.Client.Model.Fake\LogoFX.Samples.Client.Model.Fake.csproj", "{99BC955E-F321-4D74-93F5-42B7CA9A9632}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogoFX.Samples.Client.Model.Fake", "LogoFX.Samples.Client.Model.Fake\LogoFX.Samples.Client.Model.Fake.csproj", "{CF53FCE0-1040-4800-B0ED-E33574B5E694}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,21 +23,24 @@ Global
 		{58C498E4-56D6-4797-832A-99346C4D960F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58C498E4-56D6-4797-832A-99346C4D960F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58C498E4-56D6-4797-832A-99346C4D960F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4AEDC0F4-C048-4277-8D37-E51CCB6620BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4AEDC0F4-C048-4277-8D37-E51CCB6620BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4AEDC0F4-C048-4277-8D37-E51CCB6620BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4AEDC0F4-C048-4277-8D37-E51CCB6620BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99BC955E-F321-4D74-93F5-42B7CA9A9632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99BC955E-F321-4D74-93F5-42B7CA9A9632}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99BC955E-F321-4D74-93F5-42B7CA9A9632}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99BC955E-F321-4D74-93F5-42B7CA9A9632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6F6C0C-0CA9-417F-B7B0-589FCAFB209B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6F6C0C-0CA9-417F-B7B0-589FCAFB209B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6F6C0C-0CA9-417F-B7B0-589FCAFB209B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6F6C0C-0CA9-417F-B7B0-589FCAFB209B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF53FCE0-1040-4800-B0ED-E33574B5E694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF53FCE0-1040-4800-B0ED-E33574B5E694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF53FCE0-1040-4800-B0ED-E33574B5E694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF53FCE0-1040-4800-B0ED-E33574B5E694}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{58C498E4-56D6-4797-832A-99346C4D960F} = {719AD31A-1447-494B-93D5-897FCA9E0CCF}
-		{4AEDC0F4-C048-4277-8D37-E51CCB6620BD} = {1EAEA804-9B78-4EF6-8D4F-3B6D3FA398D8}
-		{99BC955E-F321-4D74-93F5-42B7CA9A9632} = {1EAEA804-9B78-4EF6-8D4F-3B6D3FA398D8}
+		{6F6F6C0C-0CA9-417F-B7B0-589FCAFB209B} = {1EAEA804-9B78-4EF6-8D4F-3B6D3FA398D8}
+		{CF53FCE0-1040-4800-B0ED-E33574B5E694} = {1EAEA804-9B78-4EF6-8D4F-3B6D3FA398D8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE28365B-B008-4837-916C-9A9A7EEE23AF}
 	EndGlobalSection
 EndGlobal
