@@ -140,7 +140,7 @@
       <Version>2.0.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="MahApps.Metro">
-      <Version>1.5.0</Version>
+      <Version>1.6.5</Version>
     </PackageReference>
     <PackageReference Include="Rx-Linq">
       <Version>2.2.5</Version>
