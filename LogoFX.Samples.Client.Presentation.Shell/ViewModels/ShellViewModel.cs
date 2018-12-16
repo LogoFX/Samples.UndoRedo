@@ -8,7 +8,7 @@ namespace LogoFX.Samples.Client.Presentation.Shell.ViewModels
     /// <summary>
     /// Root object of the application.
     /// </summary>
-    [UsedImplicitly]    
+    [UsedImplicitly]
     class ShellViewModel : Conductor<INotifyPropertyChanged>.Collection.OneActive
     {
         private readonly IViewModelCreatorService _viewModelCreatorService;

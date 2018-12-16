@@ -15,15 +15,13 @@ namespace LogoFX.Samples.Client.Presentation.Shell.ViewModels
         }
 
         private ICommand _undoCommand;
-        public ICommand UndoCommand
-        {
-            get { return _undoCommand ?? (_undoCommand = ActionCommand.When(() => Model.CanUndo).Do(() => Model.Undo()).RequeryOnPropertyChanged(this, () => Model.CanUndo));  }
-        }
+        public ICommand UndoCommand => _undoCommand ?? (_undoCommand = ActionCommand.When(() => Model.CanUndo)
+                                           .Do(() => Model.Undo())
+                                           .RequeryOnPropertyChanged(this, () => Model.CanUndo));
 
         private ICommand _redoCommand;
-        public ICommand RedoCommand
-        {
-            get { return _redoCommand ?? (_redoCommand = ActionCommand.When(() => Model.CanRedo).Do(() => Model.Redo()).RequeryOnPropertyChanged(this, () => Model.CanRedo)); }
-        }
+        public ICommand RedoCommand => _redoCommand ?? (_redoCommand = ActionCommand.When(() => Model.CanRedo)
+                                           .Do(() => Model.Redo())
+                                           .RequeryOnPropertyChanged(this, () => Model.CanRedo));
     }
 }

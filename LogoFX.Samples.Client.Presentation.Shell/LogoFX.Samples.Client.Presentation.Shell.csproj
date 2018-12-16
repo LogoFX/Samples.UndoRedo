@@ -142,12 +142,6 @@
     <PackageReference Include="MahApps.Metro">
       <Version>1.6.5</Version>
     </PackageReference>
-    <PackageReference Include="Rx-Linq">
-      <Version>2.2.5</Version>
-    </PackageReference>
-    <PackageReference Include="Rx-PlatformServices">
-      <Version>2.2.5</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
