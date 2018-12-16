@@ -4,7 +4,7 @@ using LogoFX.Samples.Client.Model.Contracts;
 namespace LogoFX.Samples.Client.Model.Fake
 {
     [UsedImplicitly]
-    class DataService : IDataService
+    internal sealed class DataService : IDataService
     {
         public ISimpleModel CreateSimpleModel()
         {

@@ -8,48 +8,42 @@ namespace LogoFX.Samples.Client.Model.Fake
         private string _name;
         public new string Name
         {
-            get { return _name; }
+            get => _name;
             set
             {
                 if (_name == value)
                 {
                     return;
                 }
-                MakeDirty();
-                _name = value;
-                NotifyOfPropertyChange();
+                SetProperty(ref _name, value);
             }
         }
                  
         private int _age;
         public int Age
         {
-            get { return _age; }
+            get => _age;
             set
             {
                 if (_age == value)
                 {
                     return;
                 }
-                MakeDirty();
-                _age = value;
-                NotifyOfPropertyChange();
+                SetProperty(ref _age, value);
             }
         }
 
         private string _address;
         public string Address
         {
-            get { return _address; }
+            get => _address;
             set
             {
                 if (_address == value)
                 {
                     return;
                 }
-                MakeDirty();
-                _address = value;
-                NotifyOfPropertyChange();
+                SetProperty(ref _address, value);
             }
         }
     }
