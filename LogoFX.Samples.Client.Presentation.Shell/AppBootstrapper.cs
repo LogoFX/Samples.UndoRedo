@@ -1,6 +1,7 @@
 ﻿using LogoFX.Client.Bootstrapping;
 using LogoFX.Client.Bootstrapping.Adapters.SimpleContainer;
 using LogoFX.Samples.Client.Presentation.Shell.ViewModels;
+using Solid.Practices.Composition;
 
 namespace LogoFX.Samples.Client.Presentation.Shell
 {
@@ -23,5 +24,11 @@ namespace LogoFX.Samples.Client.Presentation.Shell
         {
 
         }
+
+        public override CompositionOptions CompositionOptions =>
+            new CompositionOptions
+            {
+                Prefixes = new[] {"LogoFX.Samples"}
+            };
     }
 }
